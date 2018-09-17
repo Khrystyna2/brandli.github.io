@@ -123,6 +123,7 @@ header{
     -moz-transition: 0.5s ease;
     -ms-transition: 0.5s ease;
     -o-transition: 0.5s ease;
+    z-index: 2;
 }
 .menu ul li a::after{
     content: '';
@@ -137,6 +138,7 @@ header{
     -moz-transition: 0.5s ease;
     -ms-transition: 0.5s ease;
     -o-transition: 0.5s ease;
+    z-index: -1;
 }
 .menu ul li a:hover::after{
     width: 105%;
@@ -233,11 +235,11 @@ header{
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     opacity: 0;
-    transition: 0.2s ease;
-    -webkit-transition: 0.2s ease;
-    -moz-transition: 0.2s ease;
-    -ms-transition: 0.2s ease;
-    -o-transition: 0.2s ease;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
 }
 .arrow:hover img:first-of-type{
     transform: translateY(-350%);
@@ -470,6 +472,9 @@ footer p:last-of-type{
     .fs-62{
         font-size: 48apx;
         line-height: 55px;
+    }
+    .menu ul li a::after{
+        bottom: 4px;
     }
     .arrow{
         position: absolute;
