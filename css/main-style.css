@@ -69,6 +69,7 @@ body{
 .wrapper{
     width: 83.3vw;
     margin: 0 auto;
+    position: relative;
 }
 .fs-17{
     font-size: .88vmax;
@@ -180,7 +181,7 @@ header{
 .arrow{
     position: absolute;
     left: 0;
-    bottom: -11vh;
+    bottom: 5vh;
     width: 1.14vw;
 }
 .arrow img{

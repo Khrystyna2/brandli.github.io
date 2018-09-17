@@ -18,6 +18,6 @@ $(document).ready(function() {
       $self.val() == "" ? $self.prev().removeClass('active') : "";
     });
 
-
+    new WOW().init();
 
 });
