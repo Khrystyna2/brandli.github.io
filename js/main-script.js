@@ -20,4 +20,11 @@ $(document).ready(function() {
 
     new WOW().init();
 
+    //scroll 
+    $('.arrow').click(function() {
+		$('body,html').animate({
+			scrollTop: $('.block-video').offset().top
+		}, 1000);
+	});
+
 });
