@@ -18,13 +18,13 @@
         <div class="wrapper main-flex flex__content_between">
            <div class="logo">
                <a href="#"><img src="img/logo.svg" alt="Brandli"></a>
-               <p>Брендинговое агентство, специализирующееся<br>
+               <p class="fs-17">Брендинговое агентство, специализирующееся<br>
                 на сферах HoReCa, FMCG и Retail</p>
            </div>
            <div class="top-menu main-flex">
             <nav class="menu">
-                <ul class="main-flex flex__content_between">
-                    <li><a href="#">home</a></li>
+                <ul class="main-flex flex__content_between fs-17">
+                    <li><a href="#" class="active-link">home</a></li>
                     <li><a href="#">about</a></li>
                     <li><a href="#">portfolio</a></li>
                     <li><a href="#">live</a></li>
@@ -33,14 +33,112 @@
                 </ul>
            </nav>
            <div class="language">
-            <ul class="main-flex"> 
-                <li>ENG</li>
-                <li>RUS</li>
+            <ul class="main-flex fs-21"> 
+                <li id="eng" class="change-language__active">ENG</li>
+                <li id="ru">RUS</li>
             </ul>
         </div>
            </div>
         </div>
     </header>
+   <main>
+       <section class="first-screen">
+           <div class="wrapper  main-flex flex__content_between">
+               <div class="block-description">
+                    <h1 class="title-block fs-62">BRAND<span>LI</span></h1>
+                    <p class="text-block fs-23">Брендинговое агентство, специализирующееся
+                        на сферах HoReCa, FMCG и Retail.</p>
+                    <p class="text-block fs-23">Мы создаем по истине выдающиеся бренды,
+                        упаковываем «продукт» и «реанимируем»
+                        существующий бизнес, благодаря чему
+                        Вы займете лидирующее место в своей нише.</p>
+                    <div class="arrow">
+                        <img src="img/arrow-down.svg" alt="">
+                    </div>
+               </div>
+               <div class="block-img">
+                <img src="img/image.svg" alt="">
+            </div>
+           </div>
+       </section>
+       <section class="block-video">
+            <div class="wrapper main-flex flex__content_between flex__align-items_center">
+                <div class="video">
+                    <img src="img/video.jpg" alt="">
+                </div>
+                <div class="block-desc">
+                    <h1 class="subtitle-block fs-62">WORK NAME</h1>
+                    <p class="text-block fs-23">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+       </section>
+       <section class="block-work">
+        <div class="wrapper main-flex flex__content_between flex__align-items_center">
+            <div class="block-desc">
+                <h1 class="subtitle-block fs-62">WORK NAME
+                        DOUBLE PLACE</h1>
+                <p class="text-block fs-23">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="text-block fs-23">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="text-block fs-23">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+            </div>
+            <div class="image">
+                <img src="img/img-lomo.jpg" alt="">
+            </div>
+        </div>
+       </section>
+       <section class="form-communication">
+            <div class="form-communication__title">
+                <h2 class="fs-32">Создать выдающийся <span>бренд</span></h2>
+            </div>
+            <div class="wrapper">
+                <form class="form-communication__form">
+                        <div class="input-form">
+                                <label>Имя <span>*</span></label>
+                                <input type="text">
+                        </div>
+                        <div class="input-form">
+                                <label>Номер телефона <span>*</span></label>
+                                <input type="text">
+                        </div>
+                        <div class="input-form">
+                                <label>E-mail <span>*</span></label>
+                                <input type="email">
+                        </div>
+                        <div class="input-form">
+                                <label>Название компании <span>*</span></label>
+                                <input type="text">
+                        </div>
+                        <div class="input-form">
+                                <label>Должность <span>*</span></label>
+                                <input type="text">
+                        </div>
+                        <div class="input-form">
+                                <label>Адрес сайта</label>
+                                <input type="text">
+                        </div>
+                        <div class="input-form">
+                                <label>Опишите Ваш проект, потребности и ожидания. Давайте сделаем нечто крутое!
+                                    </label>
+                                <input type="text">
+                        </div>
+                    <button type="submit" class="btn-yellow fs-17">ОТПРАВИТЬ <span>СООБЩЕНИЕ</span></button>
+                </form>
+            </div>
+       </section>
+   </main>
+   <footer class="footer">
+       <div class="wrapper">
+            <div class="block-footer main-flex flex__content_between">
+                <p class="fs-17">brandli_company@info</p>
+                <p class="fs-17">(c) BrandlI. Все права защищены</p>
+                <ul class="fs-17 main-flex footer-link">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">google +</a></li>
+                </ul>
+            </div>
+       </div>
+   </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/main-script.js"></script>
 </body>
