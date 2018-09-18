@@ -39,5 +39,25 @@ $(document).ready(function() {
       $('.top-menu').removeClass('wow');
       $('.top-menu').removeClass('fadeInDown');
     }
+    
  
+
 });
+
+
+
+// $('#btnVideoPlay').click(function() {
+//     $(this).hide();
+//  });
+//  $('#videoPlay').click(function() {
+//   $('#btnVideoPlay').show();
+// });
+
+// var myVideo = document.getElementById("videoPlay"); 
+
+//     function playPause() { 
+//         if (myVideo.paused) 
+//             myVideo.play(); 
+//         else 
+//             myVideo.pause(); 
+//     } 

@@ -99,7 +99,7 @@ header{
 }
 .logo{
     margin-top: 5.4vh;
-    width: 25%;
+    width: 28%;
 }
 .logo img{
     width: 100%;
@@ -490,6 +490,9 @@ footer p:last-of-type{
         bottom: 40px;
         width: 1.14vw;
     }
+    footer p:last-of-type {
+        margin-left: 19.37vw;
+    }
 }
 @media only screen and (max-width: 1200px) and (min-width: 992px){
     .wrapper{
@@ -531,15 +534,18 @@ footer p:last-of-type{
         color: #fff;
         margin-left: 0;
     }
+    .first-screen {
+        height: 50vh;
+    }
     .block-description {
         width: 44%;
         height: 28.75vh;
-        margin-top: 23.91vh;
+        margin-top: 13.91vh;
         position: relative;
     }
     .block-img {
         width: 54%;
-        height: 84vh;
+        height: auto;
         overflow: hidden;
     }
     .block-desc {
@@ -592,7 +598,7 @@ footer p:last-of-type{
         line-height: 22px;
     }
     .fs-32{
-        font-size: 26px;
+        font-size: 22px;
     }
     .fs-62{
         font-size: 35px;
@@ -630,6 +636,7 @@ footer p:last-of-type{
         height: auto;
         margin-top: 100px;
         position: relative;
+        padding-bottom: 80px;
     }
     .title-block::before {
         content: '';
@@ -644,7 +651,7 @@ footer p:last-of-type{
     }
     .block-img {
         width: 48%;
-        height: 60vh;
+        height: auto;
     }
     .block-video {
         margin-top: 50px;
@@ -952,6 +959,7 @@ footer p:last-of-type{
         margin-top: 130px;
         position: relative;
         z-index: 2;
+        padding-bottom: 85px;
     }
     .title-block::before {
         content: '';
@@ -966,9 +974,10 @@ footer p:last-of-type{
     }
     .block-img {
         width: 100%;
+        height: 100%;
         position: absolute;
-        background: url(../img/image.png) no-repeat top left 66px;
-        background-size: 460px;
+        background: url(../img/image.png) no-repeat top left 150px;
+        background-size: 510px;
         right: 0;
         z-index: 1;
     }
@@ -1055,5 +1064,16 @@ footer p:last-of-type{
     .footer-link li{
         padding: 14px 0;
         margin: 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .block-img {
+        width: 100%;
+        position: absolute;
+        background: url(../img/image.png) no-repeat top left 62px;
+        background-size: 500px;
+        right: 0;
+        z-index: 1;
     }
 }
