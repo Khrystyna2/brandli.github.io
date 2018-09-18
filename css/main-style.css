@@ -396,12 +396,12 @@ header{
     font-weight: 400;
     color: #fff;
     background: transparent;
-    border-radius: none;
+    border-radius: 0;
     transition: ease-out 0.5s;
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    -ms-border-radius: none;
-    -o-border-radius: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
     transition: ease-out 0.2s;
     -webkit-transition: ease-out 0.2s;
     -moz-transition: ease-out 0.2s;
