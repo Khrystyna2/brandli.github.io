@@ -20,8 +20,8 @@ $(document).ready(function() {
 
     new WOW().init();
 
-    //scroll 
-    $('.arrow').click(function() {
+  //scroll 
+  $('.arrow').click(function() {
 		$('body,html').animate({
 			scrollTop: $('.block-video').offset().top
 		});
@@ -32,5 +32,12 @@ $(document).ready(function() {
   $('.menu-btn').on('click', function() {
 		$(this).toggleClass('menu-btn_active');
 		$('.menu').slideToggle(500);
-	});
+  });
+  
+ 
+    if ($(window).width() <= 600) {
+      $('.top-menu').removeClass('wow');
+      $('.top-menu').removeClass('fadeInDown');
+    }
+ 
 });
