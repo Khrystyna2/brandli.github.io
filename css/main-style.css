@@ -397,7 +397,6 @@ header{
     color: #fff;
     background: transparent;
     border-radius: 0;
-    transition: ease-out 0.5s;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
@@ -910,7 +909,8 @@ footer p:last-of-type{
             display: block;
             background: #18191E;
             height: 100vh;
-            width: 100%;
+            width: 0;
+            overflow: hidden;
             position: absolute;
             top: 59%;
             right: 0;
@@ -927,6 +927,7 @@ footer p:last-of-type{
             -o-transition: 0.4s;
 }
 .menu.menu_active{
+    width: 100%;
     transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
