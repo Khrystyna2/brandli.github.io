@@ -31,6 +31,6 @@ $(document).ready(function() {
   //menu mob
   $('.menu-btn').on('click', function() {
 		$(this).toggleClass('menu-btn_active');
-		$('.menu').toggleClass('menu_active');
+		$('.menu').slideToggle(500);
 	});
 });
