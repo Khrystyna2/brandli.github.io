@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  
+  new WOW().init();
     $('#eng, #ru').click(function() {
 		$('#ru, #eng').toggleClass('change-language__active');
 	});
@@ -18,13 +20,12 @@ $(document).ready(function() {
       $self.val() == "" ? $self.prev().removeClass('active') : "";
     });
 
-    new WOW().init();
 
   //scroll 
   $('.arrow').click(function() {
 		$('body,html').animate({
 			scrollTop: $('.block-video').offset().top
-		});
+		}, 200);
 	});
 
 
@@ -40,7 +41,7 @@ $(document).ready(function() {
       $('.top-menu').removeClass('fadeInDown');
     }
     
- 
+
 
 });
 

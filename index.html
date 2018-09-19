@@ -8,7 +8,7 @@
     <title>Brandli</title>
     <link rel="mask-icon" href="">
     <!-- fonts-google -->
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,500i,600,700,700i" rel="stylesheet">
     <!-- animate -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- main style -->
@@ -16,13 +16,22 @@
 </head>
 
 <body>
+    <div class="lines main-flex flex__content_between">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
     <header>
         <div class="wrapper main-flex flex__content_between">
             <div class="logo">
                 <a href="#"><img src="img/logo.svg" alt="Brandli"></a>
                 <p class="fs-17">Брендинговое агентство, специализирующееся<br> на сферах HoReCa, FMCG и Retail</p>
             </div>
-            <div class="top-menu wow fadeInDown">
+            <div class="top-menu wow fadeInDown" data-wow-duration="0.5s">
                 <div class="menu-btn">
                     <span></span>
                 </div>
@@ -48,15 +57,15 @@
     <main>
         <section class="first-screen">
             <div class="wrapper  main-flex flex__content_between">
-                <div class="block-description">
-                    <h1 class="title-block fs-62 wow fadeInLeft" data-wow-duration="1.5s">BRAND<span>LI</span></h1>
-                    <p class="text-block fs-23 wow fadeInLeft" data-wow-duration="1.5s">Брендинговое агентство, специализирующееся
+                <div class="block-description wow fadeInLeft" data-wow-duration="0.5s">
+                    <h1 class="title-block fs-62">BRAND<span>LI</span></h1>
+                    <p class="text-block fs-23">Брендинговое агентство, специализирующееся
                         на сферах HoReCa, FMCG и Retail.</p>
-                    <p class="text-block fs-23 wow fadeInLeft" data-wow-duration="1.5s">Мы создаем по истине выдающиеся бренды,
+                    <p class="text-block fs-23">Мы создаем по истине выдающиеся бренды,
                         упаковываем «продукт» и «реанимируем» существующий бизнес, благодаря чему Вы займете лидирующее место
                         в своей нише.</p>
                 </div>
-                <div class="block-img wow fadeIn" data-wow-duration="4.5s" data-wow-delay="1s">
+                <div class="block-img wow fadeIn" data-wow-duration="2.5s">
                     <!-- <img src="img/image.svg" alt=""> -->
                 </div>
                 <div class="arrow">
@@ -68,15 +77,15 @@
         </section>
         <section class="block-video">
             <div class="wrapper main-flex flex__content_between flex__align-items_center">
-                <div class="video wow fadeIn">
+                <div class="video wow fadeIn" data-wow-duration="2.5s">
                     <!-- <button id="btnVideoPlay" onclick="playPause()"><img src="img/play.svg" alt=""></button> -->
                     <video id="videoPlay" width="100%" controls poster="img/video.jpg" onclick="playPause()">
                         <source src="video/Nature Beautiful short video 720p HD.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="block-desc wow fadeInRight">
-                    <h1 class="subtitle-block fs-62 wow fadeInRight" data-wow-duration="1s"><a href="#">WORK NAME</a></h1>
-                    <p class="text-block fs-23 wow fadeInRight" data-wow-duration="1s">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                <div class="block-desc wow fadeInRight" data-wow-duration="0.5s">
+                    <h1 class="subtitle-block fs-62"><a href="#">WORK NAME</a></h1>
+                    <p class="text-block fs-23">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -84,29 +93,29 @@
         </section>
         <section class="block-work">
             <div class="wrapper main-flex flex__content_between flex__align-items_center">
-                <div class="block-desc">
-                    <h1 class="subtitle-block fs-62 wow fadeInLeft">WORK NAME DOUBLE PLACE</h1>
-                    <p class="text-block fs-23 wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                <div class="block-desc wow fadeInLeft" data-wow-duration="0.5s">
+                    <h1 class="subtitle-block fs-62">WORK NAME DOUBLE PLACE</h1>
+                    <p class="text-block fs-23">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="text-block fs-23 wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    <p class="text-block fs-23">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="text-block fs-23 wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    <p class="text-block fs-23">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do eiusmod tempor incididunt ut labore et dolore </p>
                 </div>
-                <div class="image wow fadeIn">
+                <div class="image wow fadeIn" data-wow-duration="1s">
                     <img src="img/img-lomo.jpg" alt="">
                 </div>
             </div>
         </section>
         <section class="form-communication">
             <div class="form-communication__title">
-                <h2 class="fs-32 wow fadeIn" data-wow-duration="4.5s">Создать выдающийся <span>бренд</span></h2>
+                <h2 class="fs-32 wow fadeIn" data-wow-duration="0.5s">Создать выдающийся <span>бренд</span></h2>
             </div>
             <div class="wrapper">
                 <form class="form-communication__form">
-                    <div class="input-form wow fadeIn">
+                    <div class="input-form wow fadeIn" data-wow-duration="1s">
                         <label>Имя <span>*</span></label>
                         <input type="text">
                     </div>
@@ -142,7 +151,7 @@
     </main>
     <footer class="footer">
         <div class="wrapper">
-            <div class="block-footer main-flex flex__content_between wow fadeInUp">
+            <div class="block-footer main-flex flex__content_between wow fadeInUp" data-wow-duration="0.5s">
                 <p class="fs-17">brandli_company@info</p>
                 <p class="fs-17">(c) BrandlI. Все права защищены</p>
                 <ul class="fs-17 main-flex footer-link">
