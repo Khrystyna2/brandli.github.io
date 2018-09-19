@@ -24,7 +24,7 @@ $(document).ready(function() {
   //scroll 
   $('.arrow').click(function() {
 		$('body,html').animate({
-			scrollTop: $('.block-video').offset().top
+			scrollTop: $('.block-video, .brand-question').offset().top
 		}, 200);
 	});
 
