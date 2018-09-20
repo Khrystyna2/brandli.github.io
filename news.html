@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brandli</title>
+    <link rel="mask-icon" href="">
+    <!-- fonts-google -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,500i,600,700,700i" rel="stylesheet">
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/main-style.css">
+</head>
+
+<body>
+    <!-- block with vertical lines on page -->
+    <div class="lines main-flex flex__content_between">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <header>
+        <div class="wrapper main-flex flex__content_between">
+            <div class="logo">
+                <a href="#"><img src="img/logo.svg" alt="Brandli"></a>
+                <p class="fs-17">Брендинговое агентство, специализирующееся<br> на сферах HoReCa, FMCG и Retail</p>
+            </div>
+            <div class="top-menu wow fadeInDown" data-wow-duration="0.1s">
+                <div class="menu-btn">
+                    <span></span>
+                </div>
+                <nav class="menu">
+                    <ul class="main-flex flex__content_between fs-17">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">live</a></li>
+                        <li><a href="#">PRESS</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                    <div class="language">
+                        <ul class="main-flex fs-21">
+                            <li id="eng">ENG</li>
+                            <li id="ru">RUS</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="bg-white">
+        <section class="live">
+            <div class="wrapper  main-flex flex__content_between">
+                <div class="block-description wow fadeInLeft" data-wow-duration="0.5s">
+                    <h1 class="title-block fs-62">НАЗВАНИЕ НОВОС<span>ТИ</span></h1>
+                </div>
+            </div>
+            <div class="wrapper">
+                    <div class="live-wrap">
+                        <div class="column">
+                            <div href="#" class="live-content wow fadeIn">
+                                <a href="#">
+                                    <img src="img/live/img-1.jpg" alt="">
+                                </a>
+                                <div class="live-content__desc">
+                                    <div class="live-content__title main-flex flex__content_between">
+                                        <a href="#" class="title-link fs-29">Название новости</a>
+                                        <span class="fs-21 bold">News</span>
+                                    </div>
+                                    <div class="live-content__text">
+                                        <p class="fs-23 text-block">Это самый сложный процесс работы, но самый обязательный. Проработав стратегическую
+                                            часть, Вы поймете куда двигаться, как и зачем. Это поможет избежать многих ошибок и правильно задать
+                                            темп всей предстоящей деятельности!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div href="#" class="live-content wow fadeIn">
+                                    <a href="#">
+                                            <img src="img/live/img-3.jpg" alt="">
+                                        </a>
+                                <div class="live-content__desc">
+                                    <div class="live-content__title main-flex flex__content_between">
+                                        <a href="#" class="title-link fs-29">Название новости</a>
+                                        <span class="fs-21 bold">Event</span>
+                                    </div>
+                                    <div class="live-content__text">
+                                        <p class="fs-23 text-block">Это самый сложный процесс работы, но самый обязательный. Проработав стратегическую
+                                            часть, Вы поймете куда двигаться, как и зачем. Это поможет избежать многих ошибок и правильно задать
+                                            темп всей предстоящей деятельности!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="live-content wow fadeIn">
+                                <img src="img/live/img-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a href="#" class="live-content wow fadeIn">
+                                <img src="img/live/img-2.jpg" alt="">
+                            </a>
+                            <div href="#" class="live-content wow fadeIn">
+                                    <a href="#">
+                                            <img src="img/live/img-4.jpg" alt="">
+                                        </a>
+                                <div class="live-content__desc">
+                                    <div class="live-content__title main-flex flex__content_between">
+                                        <a href="#" class="title-link fs-29">Название новости</a>
+                                        <span class="fs-21 bold">Event</span>
+                                    </div>
+                                    <div class="live-content__text">
+                                        <p class="fs-23 text-block">Это самый сложный процесс работы, но самый обязательный. Проработав стратегическую
+                                            часть, Вы поймете куда двигаться, как и зачем. Это поможет избежать многих ошибок и правильно задать
+                                            темп всей предстоящей деятельности!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video video-live wow fadeIn" data-wow-duration="1.5s">
+                                <video id="videoPlay" width="100%" controls poster="img/video.jpg" onclick="playPause()">
+                                    <source src="video/Nature Beautiful short video 720p HD.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- це для мобільної версії  -->
+                <div class="live-wrap__mob">
+                    <div class="column">
+                        <div href="#" class="live-content wow fadeIn">
+                                <a href="#">
+                                        <img src="img/live/img-1.jpg" alt="">
+                                    </a>
+                            <div class="live-content__desc">
+                                <div class="live-content__title main-flex flex__content_between">
+                                    <a href="#" class="title-link fs-29">Название новости</a>
+                                    <span class="fs-21 bold">News</span>
+                                </div>
+                                <div class="live-content__text">
+                                    <p class="fs-23 text-block">Это самый сложный процесс работы, но самый обязательный. Проработав
+                                        стратегическую часть, Вы поймете куда двигаться, как и зачем. Это поможет избежать многих
+                                        ошибок и правильно задать темп всей предстоящей деятельности!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <a href="#" class="live-content wow fadeIn">
+                            <img src="img/live/img-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <div href="#" class="live-content wow fadeIn">
+                                <a href="#">
+                                        <img src="img/live/img-3.jpg" alt="">
+                                    </a>
+                            <div class="live-content__desc">
+                                <div class="live-content__title main-flex flex__content_between">
+                                    <a href="#" class="title-link fs-29">Название новости</a>
+                                    <span class="fs-21 bold">Event</span>
+                                </div>
+                                <div class="live-content__text">
+                                    <p class="fs-23 text-block">Это самый сложный процесс работы, но самый обязательный. Проработав
+                                        стратегическую часть, Вы поймете куда двигаться, как и зачем. Это поможет избежать многих
+                                        ошибок и правильно задать темп всей предстоящей деятельности!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div href="#" class="live-content wow fadeIn">
+                                <a href="#">
+                                        <img src="img/live/img-4.jpg" alt="">
+                                    </a>
+                            <div class="live-content__desc">
+                                <div class="live-content__title main-flex flex__content_between">
+                                    <a href="#" class="title-link fs-29">Название новости</a>
+                                    <span class="fs-21 bold">Event</span>
+                                </div>
+                                <div class="live-content__text">
+                                    <p class="fs-23 text-block">Это самый сложный процесс работы, но самый обязательный. Проработав
+                                        стратегическую часть, Вы поймете куда двигаться, как и зачем. Это поможет избежать многих
+                                        ошибок и правильно задать темп всей предстоящей деятельности!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <a href="#" class="live-content wow fadeIn">
+                            <img src="img/live/img-5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <div class="video wow fadeIn" data-wow-duration="1.5s">
+                            <video id="videoPlay" width="100%" controls poster="img/video.jpg" onclick="playPause()">
+                                <source src="video/Nature Beautiful short video 720p HD.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="block-footer main-flex flex__content_between wow fadeInUp">
+                <p class="fs-17">brandli_company@info</p>
+                <p class="fs-17">(c) BrandlI. Все права защищены</p>
+                <ul class="fs-17 main-flex footer-link">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">google +</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main-script.js"></script>
+</body>
+
+</html>
