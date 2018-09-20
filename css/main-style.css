@@ -499,7 +499,7 @@ footer p:last-of-type{
     position: absolute;
     width: 33%;
     right: 0;
-    bottom: -50%;
+    bottom: -165px;
 }
 .signature img{
     width: 100%;
@@ -577,6 +577,10 @@ footer p:last-of-type{
     color: #18191E;
     font-weight: 700;
 }
+.brand-steps__banner .br{
+    width: 15px;
+    height: 35px;
+}
 .bg-gradient__top{
     background: linear-gradient(to top, #18191E 35%,  #FFDD00 85%);
     text-align: center;
@@ -598,17 +602,12 @@ footer p:last-of-type{
 .brand-steps__desc_list li{
     padding-bottom: 14px;
 }
-.dog-molli{
-    /* position: relative;
-    z-index: 2;
-    background: #18191E; */
-    border-bottom: 1px solid #797979;
-}
 .molli{
     background: url(../img/about/molli.png) no-repeat bottom left;
     background-size: contain;
     height: 745px;
-    position: relative;
+    position: relative; 
+    border-bottom: 1px solid #797979;
 }
 .molli__title{
     position: absolute;
@@ -660,7 +659,7 @@ footer p:last-of-type{
     }
     .fs-23 {
         font-size: 18px;
-        line-height: 25px;
+        line-height: 22px;
     }
     .fs-29{
         font-size: 24px;
@@ -672,7 +671,7 @@ footer p:last-of-type{
     }
     .fs-62{
         font-size: 48px;
-        line-height: 55px;
+        line-height: 48px;
     }
     .menu ul li a::after{
         bottom: 4px;
@@ -680,11 +679,29 @@ footer p:last-of-type{
     .arrow{
         position: absolute;
         left: 0;
-        bottom: 40px;
+        bottom: 20px;
         width: 1.14vw;
+    }
+    .text-block {
+        padding-bottom: 5px;
+    }
+    .block-desc {
+        width: 40.02vw;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #FFDD00;
     }
     footer p:last-of-type {
         margin-left: 19.37vw;
+    }
+    .signature {
+        position: absolute;
+        width: 25%;
+        right: 0;
+        bottom: -115px;
+    }
+    .our-achievements {
+        width: 610px;
+        margin-left: -36px;
     }
     .our-achievements .our-achievements__content div {
         font-size: 70px;
@@ -826,7 +843,7 @@ footer p:last-of-type{
         margin-bottom: 115px;
     }
     .signature {
-        bottom: -35%;
+        bottom: -25%;
     }
     .wrap .block-desc {
         width: 100%;
@@ -1506,6 +1523,100 @@ footer p:last-of-type{
         padding: 14px 0;
         margin: 0;
     }
+    .title-block {
+        letter-spacing: 5px;
+        padding-bottom: 8px;
+    }
+    .about .block-description {
+        width: 100%;
+        height: 100%;
+    }
+    .about .block-img {
+       display: none;
+    }
+    .about .block-description {
+        margin-bottom: 50px;
+    }
+    .signature {
+        position: absolute;
+        width: 35%;
+        right: 0;
+        bottom: -20px;
+    }
+    .brand-question .wrapper,
+    .brand-change .wrapper,
+    .brand-idea .wrapper,
+    .brand-steps .wrapper{
+        flex-flow: column;
+    }
+    .brand-question .wrapper .block-desc,
+    .brand-idea .wrapper .block-desc{
+        order: 2;
+    }
+    .brand-question .wrapper .image,
+    .brand-idea .wrapper .image{
+        order: 1;
+        margin-bottom: 15px;
+    }
+    .brand-question, .brand-change, .brand-idea, .brand-steps {
+        padding-top: 40px;
+    }
+    .our-achievements{
+        flex-flow: column;
+    }
+    .our-achievements .our-achievements__content {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .our-achievements .our-achievements__content p::before {
+        height: 40px;
+    }
+    .brand-steps__desc {
+        width: 100%;
+        margin-left: 0;
+    }
+    .brand-steps {
+        padding-bottom: 50px;
+    }
+    .brand-steps__desc_title {
+        color: #18191E;
+        padding-bottom: 10px;
+        padding-top: 9px;
+    }
+    .bg-yellow {
+        background-color: #FFDD00;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .brand-steps__banner {
+        padding: 0 20px;
+        height: 65px;
+        width: 100%;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .brand-steps__banner span {
+        font-size: 37px;
+        line-height: normal;
+        letter-spacing: 9px;
+    }
+    .molli {
+        background: url(../img/about/molli.png) no-repeat top left;
+        background-size: 390px;
+        height: auto;
+        position: relative;
+    }
+    .molli .block-desc {
+        margin-top: 220px;
+    }
+    .molli__title {
+        width: 250px;
+        height: 70px;
+        padding: 15px 0 0 25px;
+        position: relative;
+        top: 210px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1534,5 +1645,14 @@ footer p:last-of-type{
         background-size: 500px;
         right: 0;
         z-index: 1;
+    }
+    .brand-steps__banner {
+        padding: 0 10px;
+        height: 45px;
+    }
+    .brand-steps__banner span {
+        font-size: 24px;
+        line-height: normal;
+        letter-spacing: 5px;
     }
 }
