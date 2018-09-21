@@ -2072,7 +2072,7 @@ footer p:last-of-type{
     .block-img {
         width: 100%;
         position: absolute;
-        background: url(../img/image.png) no-repeat top left 62px;
+        background: url(../img/image-man.png) no-repeat top left 62px;
         background-size: 500px;
         right: 0;
         z-index: 1;
