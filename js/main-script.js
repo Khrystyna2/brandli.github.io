@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   
-  new WOW().init();
+  // new WOW().init();
 
 
   // $('#eng, #ru').click(function() {
@@ -42,7 +42,7 @@ $(document).ready(function() {
       $('.top-menu').removeClass('wow');
       $('.top-menu').removeClass('fadeInDown');
     }
-    
-
 
 });
+
+new WOW().init();
