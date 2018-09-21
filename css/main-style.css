@@ -1,7 +1,10 @@
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
 }
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{background: none repeat scroll 0 0 transparent;border: 0 none;font-size: 100%;outline: 0 none;vertical-align: baseline;margin: 0;padding: 0;}table{border-collapse:collapse;border-spacing:0;}address,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,nav,menu,nav,section,summary{display:block;}  a, a:hover,button,button:hover, .anime, .small_btn, .btn:hover .small_btn   {-moz-transition:all 200ms linear;-ms-transition:all 200ms linear;-o-transition:all 200ms linear;-webkit-transition:all 200ms linear;transition:all 200ms linear;}  button{cursor:pointer;}  *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;} 
+/* html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{background: none repeat scroll 0 0 transparent;border: 0 none;font-size: 100%;outline: 0 none;vertical-align: baseline;margin: 0;padding: 0;}table{border-collapse:collapse;border-spacing:0;}address,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,nav,menu,nav,section,summary{display:block;}  a, a:hover,button,button:hover, .anime, .small_btn, .btn:hover .small_btn   {-moz-transition:all 200ms linear;-ms-transition:all 200ms linear;-o-transition:all 200ms linear;-webkit-transition:all 200ms linear;transition:all 200ms linear;}   */
 h1, h2, h3, h4, h5, h6, p{
     padding: 0;
     margin: 0;
@@ -68,6 +71,7 @@ body{
     font-weight: 500;
     letter-spacing: 0.08em;
     overflow-x: hidden;
+    margin: 0;
 }
 /*lines block*/
 .lines .line{
@@ -148,6 +152,7 @@ header{
 .top-menu{
     margin-top: 7.66vh;
     width: 59%;
+    visibility: hidden;
 }
 .menu{
     display: flex;
@@ -852,19 +857,88 @@ footer p:last-of-type{
 }
 /*page work*/
 .work{
-    background: url(../img/work/image.png) no-repeat center center;
+    background: url(../img/work/image.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
     margin-top: -16vh;
     position: relative;
     z-index: 1;
+    visibility: hidden;
 }
 .work .block-description {
     margin-top: 39.91vh;
 }
 .bg-wight{
+    background-image: url(../img/work/DESIGN.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
     background-color: #fff;
     padding: 125px;
+}
+.our-services{
+    margin-bottom: 150px;
+}
+.our-services__box{
+    width: 36%;
+}
+.our-services__box:last-of-type{
+    width: 24%;
+}
+.our-services__box:first-of-type{
+    width: 24%;
+}
+.our-services__box h3{
+    padding-bottom: 15px;
+}
+
+.desc-work{
+    margin-bottom: 150px;
+    visibility: hidden;
+}
+.desc-work__title{
+    font-size: 46px;
+    line-height: 50px;
+    letter-spacing: 9px;
+    color: #18191E;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+.desc-work__text{
+    border-left: 130px solid #FFDD00;
+    border-bottom: 2px solid #FFDD00;
+    padding-left: 30px;
+    padding-bottom: 28px;
+}
+.image-work{
+    width: 100%;
+    margin-bottom: 130px;
+}
+.image-work img{
+    width: 100%;
+}
+.block-desc.border-left{
+    border-left: 2px solid #FFDD00;
+    border-bottom: none;
+    padding-left: 50px;
+    width: 50%;
+}
+.bg-wight .subtitle-block span:first-of-type{
+    font-weight: 400;
+}
+.slider-first{
+    width: 100%;
+    max-height: 805px;
+    overflow: hidden;
+}
+.slider-img{
+    width: 100%;
+}
+.slider-img img{
+    width: 100%;
+}
+.block-desc.border-none{
+    border: none;
+    margin-top: 150px;
 }
 
 @media only screen and (max-width: 1845px){
@@ -902,7 +976,7 @@ footer p:last-of-type{
     }
     .fs-23 {
         font-size: 18px;
-        line-height: 22px;
+        line-height: 24px;
     }
     .fs-29{
         font-size: 24px;
@@ -1734,7 +1808,9 @@ footer p:last-of-type{
     .top-menu {
         margin-top: 36px;
         width: 20px;
-        justify-content: space-between
+        justify-content: space-between;
+        visibility: visible;
+        z-index: 2;
     }
     
     .menu {

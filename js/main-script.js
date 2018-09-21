@@ -43,5 +43,14 @@ $(document).ready(function() {
       $('.top-menu').removeClass('fadeInDown');
     }
 
+    $('.slider-first').slick({
+      infinite: true,
+      // autoplay: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true
+    });
+
 });
 
