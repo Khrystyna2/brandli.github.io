@@ -2,9 +2,11 @@ $(document).ready(function() {
 
   
   new WOW().init();
-    $('#eng, #ru').click(function() {
-		$('#ru, #eng').toggleClass('change-language__active');
-	});
+
+
+  // $('#eng, #ru').click(function() {
+	// 	$('#ru, #eng').toggleClass('change-language__active');
+	// });
 
 
     //style input
@@ -44,21 +46,3 @@ $(document).ready(function() {
 
 
 });
-
-
-
-// $('#btnVideoPlay').click(function() {
-//     $(this).hide();
-//  });
-//  $('#videoPlay').click(function() {
-//   $('#btnVideoPlay').show();
-// });
-
-// var myVideo = document.getElementById("videoPlay"); 
-
-//     function playPause() { 
-//         if (myVideo.paused) 
-//             myVideo.play(); 
-//         else 
-//             myVideo.pause(); 
-//     } 

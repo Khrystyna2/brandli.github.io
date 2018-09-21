@@ -60,7 +60,7 @@ body{
     height: 100%;
     background: #18191E;
     /* background-size: cover;
-    background-repeat: repeat-x; */
+    background-repeat: repeat; */
     color: #959595;
     font-size: 17px;
     line-height: 24px;
@@ -1107,6 +1107,20 @@ footer p:last-of-type{
     .image-hover__title p {
         letter-spacing: 5px;
     }
+    .news-block {
+        padding-left: 10px;
+    }
+    .lick {
+        margin-top: 45px;
+    }
+    .image-line__content {
+        width: 16%;
+        height: 300px;
+        overflow: hidden;
+    }
+    .image-line {
+        margin-top: 60px;
+    }
 }
 @media only screen and (max-width: 991px) and (min-width: 750px) {
     .lines .line:first-of-type{
@@ -1305,6 +1319,18 @@ footer p:last-of-type{
     }
     .video-live{
         width: 100%;
+    }
+    .news-block-2__desc {
+        width: 63%;
+        margin-top: 0;
+    }
+    .news-block__img {
+        width: 35%;
+    }
+    .image-line__content {
+        width: 16%;
+        height: 200px;
+        overflow: hidden;
     }
     
 }
@@ -1509,6 +1535,25 @@ footer p:last-of-type{
     }
     .projects .wrapper .block-description{
         width: 100%;
+    }
+    .image-line__content {
+        width: 16%;
+        height: 200px;
+        overflow: hidden;
+    }
+    .news-block-2{
+        flex-flow: column;
+        -ms-flex-flow: column;
+    }
+    .news-block-2__desc {
+        width: 100%;
+        margin-top: 10px;
+        order: 2
+    }
+    .news-block__img {
+        width: 50%;
+        order: 1;
+        margin: 0 auto;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -1880,6 +1925,38 @@ footer p:last-of-type{
     }
     .projects .wrapper .block-description{
         width: 100%;
+    }
+    .news-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .news-block {
+        padding-left: 0;
+    }
+    .news-block > p {
+        width: 100%;
+    }
+    .news-block-2{
+        flex-flow: column;
+        -ms-flex-flow: column;
+    }
+    .news-block-2__desc {
+        width: 100%;
+        margin-top: 10px;
+        order: 2
+    }
+    .news-block__img {
+        width: 65%;
+        order: 1;
+        margin: 0 auto;
+    }
+    .image-line__content {
+        width: 16%;
+        height: 200px;
+        overflow: hidden;
+    }
+    .image-box:hover .image-hover .image-hover__title{
+        display: none;
     }
 }
 @media only screen and (max-width: 575px) {
