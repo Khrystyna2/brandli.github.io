@@ -58,8 +58,8 @@ a{
 body{
     width: 100%;
     height: 100%;
-    background: #18191E;
-    /* background-size: cover;
+    background: #18191E url(../img/fon.png) repeat top left;
+    /* background-size: contain;
     background-repeat: repeat; */
     color: #959595;
     font-size: 17px;
@@ -136,6 +136,8 @@ header{
 .logo{
     margin-top: 5.4vh;
     width: 28%;
+    position: relative;
+    z-index: 2;
 }
 .logo img{
     width: 100%;
@@ -190,6 +192,8 @@ header{
     line-height: 25px;
     color: #fff;
     margin-left: 8.59vw;
+    position: relative;
+    z-index: 2;
 }
 .language ul li{
     padding: 0 13px;
@@ -297,7 +301,7 @@ header{
     width: 52.76vw;
     height: 84vh;
     overflow: hidden;
-    background: url(../img/image.png) no-repeat center center;
+    background: url(../img/image-man.png) no-repeat top center;
     background-size: cover;
 }
 .block-img img{
@@ -500,8 +504,8 @@ footer p:last-of-type{
     color: #18191E;
 }
 .about .block-img{
-    background: #18191E url(../img/about/image-2.png) no-repeat top center;
-    background-size: cover;
+    background: url(../img/about/image-woman.png) no-repeat bottom center;
+    background-size: contain;
 }
 .about .block-description{
     width: 65%;
@@ -779,6 +783,10 @@ footer p:last-of-type{
 }
 .news-block__img{
     width: 48%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .news-block__img img{
     width: 100%;
@@ -814,6 +822,45 @@ footer p:last-of-type{
 }
 .image-line__content .image-box .image-hover__title p{
     color: #18191E;
+}
+.form-project{
+    margin-top: 150px;
+}
+
+/*page contacts*/ 
+.contacts{
+    position: relative; 
+    min-height: calc(84vh - 150px);
+}
+.contacts-img{
+    background: url(../img/image-woman-2.png) no-repeat bottom right;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 80%;
+}
+.contacts .text-block span{
+    color: #fff;
+    text-decoration: underline;
+}
+.contacts-text{
+    position: absolute;
+    top: 0;
+    right: -35%;
+}
+/*page work*/
+.work{
+    background: url(../img/work/image.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    margin-top: -16vh;
+    position: relative;
+    z-index: 1;
+}
+.work .block-description {
+    margin-top: 39.91vh;
 }
 
 @media only screen and (max-width: 1845px){
@@ -1121,6 +1168,18 @@ footer p:last-of-type{
     .image-line {
         margin-top: 60px;
     }
+    .form-project{
+        margin-top: 60px;
+    }
+    .contacts-text{
+        position: absolute;
+        top: 280px;
+        right: 0;
+    }
+    .contacts {
+        position: relative;
+        min-height: calc(88vh - 150px);
+    }
 }
 @media only screen and (max-width: 991px) and (min-width: 750px) {
     .lines .line:first-of-type{
@@ -1331,6 +1390,17 @@ footer p:last-of-type{
         width: 16%;
         height: 200px;
         overflow: hidden;
+    }
+    .contacts {
+        position: relative;
+        min-height: calc(88vh - 80px);
+    }
+    .contacts-img {
+        width: 70%;
+    }
+    .contacts-text {
+        position: static;
+        margin-top: 15px;
     }
     
 }
@@ -1958,6 +2028,11 @@ footer p:last-of-type{
     .image-box:hover .image-hover .image-hover__title{
         display: none;
     }
+    .contacts-text {
+        position: absolute;
+        top: 280px;
+        right: 160px;
+    }
 }
 @media only screen and (max-width: 575px) {
     .column {
@@ -2013,5 +2088,15 @@ footer p:last-of-type{
     }
     .projects .wrapper .block-description .fs-62{
         font-size: 22px;
+    }
+    .contacts {
+        position: relative;
+        min-height: calc(85vh);
+    }
+}
+@media only screen and (max-width: 320px) {
+    .contacts {
+        position: relative;
+        min-height: calc(100vh);
     }
 }
