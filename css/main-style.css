@@ -133,6 +133,10 @@ body{
     line-height: 67px;
 }
 
+.wow{
+    visibility: hidden;
+}
+
 /*page index*/
 header{
     height: 16vh;
@@ -152,7 +156,6 @@ header{
 .top-menu{
     margin-top: 7.66vh;
     width: 59%;
-    visibility: hidden;
 }
 .menu{
     display: flex;
@@ -863,7 +866,6 @@ footer p:last-of-type{
     margin-top: -16vh;
     position: relative;
     z-index: 1;
-    visibility: hidden;
 }
 .work .block-description {
     margin-top: 39.91vh;
@@ -893,7 +895,6 @@ footer p:last-of-type{
 
 .desc-work{
     margin-bottom: 150px;
-    visibility: hidden;
 }
 .desc-work__title{
     font-size: 46px;
@@ -1809,7 +1810,6 @@ footer p:last-of-type{
         margin-top: 36px;
         width: 20px;
         justify-content: space-between;
-        visibility: visible;
         z-index: 2;
     }
     
@@ -1857,7 +1857,7 @@ footer p:last-of-type{
         height: auto;
         margin-top: 130px;
         position: relative;
-        z-index: 2;
+        z-index: 1;
         padding-bottom: 85px;
     }
     .title-block::before {
