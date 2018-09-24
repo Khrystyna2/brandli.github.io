@@ -26,8 +26,8 @@ $(document).ready(function() {
   //scroll 
   $('.arrow').click(function() {
 		$('body,html').animate({
-			scrollTop: $('.block-video, .brand-question').offset().top
-		}, 200);
+			scrollTop: $('.block-video, .brand-question, .bg-wight').offset().top
+		}, 300);
 	});
 
 
@@ -45,7 +45,7 @@ $(document).ready(function() {
 
     $('.slider-first').slick({
       infinite: true,
-      autoplay: true,
+      // autoplay: true,
       autoplaySpeed: 3000,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -56,7 +56,7 @@ $(document).ready(function() {
 
     $('.slider-vertical').slick({
       infinite: true,
-      autoplay: true,
+      // autoplay: true,
       speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -68,7 +68,7 @@ $(document).ready(function() {
 
     $('.slider-vertical__second').slick({
       infinite: true,
-      autoplay: true,
+      // autoplay: true,
       speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -85,7 +85,17 @@ $(document).ready(function() {
       slidesToShow: 6,
       slidesToScroll: 1,
       arrows: false,
-      dots: false
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true
+          }
+        }
+      ] 
     });
 
 
