@@ -808,10 +808,11 @@ footer p:last-of-type{
 .news-block__img img{
     width: 100%;
 }
-.lick{
+.link{
     margin-top: 120px;
+    align-items: center;
 }
-.lick span{
+.link span{
     color: #fff;
 }
 
@@ -1361,7 +1362,7 @@ footer p:last-of-type{
         padding-left: 10px;
         margin-bottom: 60px;
     }
-    .lick {
+    .link {
         margin-top: 45px;
     }
     .image-line__content {
