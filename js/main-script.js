@@ -45,12 +45,49 @@ $(document).ready(function() {
 
     $('.slider-first').slick({
       infinite: true,
-      // autoplay: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
       dots: true
+      // fade: true
     });
+
+    $('.slider-vertical').slick({
+      infinite: true,
+      autoplay: true,
+      speed: 1000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      fade: true
+      // vertical: true
+    });
+
+    $('.slider-vertical__second').slick({
+      infinite: true,
+      autoplay: true,
+      speed: 1000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      fade: true
+      // vertical: true
+    });
+
+    $('.image-line').slick({
+      infinite: true,
+      autoplay: true,
+      speed: 800,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false
+    });
+
 
 });
 
