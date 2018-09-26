@@ -243,6 +243,7 @@ header{
     letter-spacing: 9px;
     padding-bottom: 10px;
     position: relative;
+    text-transform: uppercase;
 }
 .title-block::before{
     content: '';
@@ -520,8 +521,8 @@ footer p:last-of-type{
     color: #18191E;
 }
 .about .block-img{
-    background: url(../img/about/image-woman.png) no-repeat bottom center;
-    background-size: contain;
+    background: url(../img/about/image-woman.png) no-repeat top center;
+    background-size: cover;
 }
 .about .block-description{
     width: 65%;
@@ -557,6 +558,21 @@ footer p:last-of-type{
 .brand-change,
 .brand-idea{
     margin-top: -5px;
+}
+
+.brand-change .img-gif {
+    width: 34.11vw;
+    position: relative;
+    margin-top: 190px;
+}
+
+.brand-change .img-gif .yellow-square{
+    background-color: #FFDD00;
+    width: 8.85vw;
+    height: 8.85vw;
+    position: absolute;
+    right: 5px;
+    top: -190px;
 }
 .our-achievements{
     display: flex;
@@ -867,7 +883,8 @@ footer p:last-of-type{
 .contacts-text{
     position: absolute;
     top: 0;
-    right: -35%;
+    right: -37%;
+    font-size: 22px;
 }
 /*page work*/
 .work{
@@ -1165,6 +1182,27 @@ footer p:last-of-type{
         width: 16%;
         height: 450px;
         overflow: hidden;
+    }
+    .contacts-text{
+        position: absolute;
+        top: 4px;
+        right: -36%;
+        font-size: 14px;
+    }
+
+    .brand-change .img-gif {
+        width: 430px;
+        position: relative;
+        margin-top: 140px;
+    }
+    
+    .brand-change .img-gif .yellow-square{
+        background-color: #FFDD00;
+        width: 110px;
+        height: 110px;
+        position: absolute;
+        right: 5px;
+        top: -130px;
     }
 }
 @media only screen and (max-width: 1200px){
@@ -1472,6 +1510,21 @@ footer p:last-of-type{
     .form-communication__title a {
         line-height: 100px;
     }
+
+    .brand-change .img-gif {
+        width: 340px;
+        position: relative;
+        margin-top: 110px;
+    }
+    
+    .brand-change .img-gif .yellow-square{
+        background-color: #FFDD00;
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        right: 1px;
+        top: -110px;
+    }
 }
 @media only screen and (max-width: 991px) and (min-width: 750px) {
     .lines .line:first-of-type{
@@ -1729,6 +1782,25 @@ footer p:last-of-type{
         margin-top: 220px;
         padding-bottom: 60px;
     }
+
+    .brand-change .img-gif {
+        width: 270px;
+        position: relative;
+        margin-top: 90px;
+    }
+    
+    .brand-change .img-gif .yellow-square{
+        background-color: #FFDD00;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        right: 2px;
+        top: -85px;
+    }
+
+    .wrap{
+        width: 60%;
+    }
 }
 @media only screen and (max-width: 750px) and (min-width: 601px) {
     .lines .line:first-of-type{
@@ -1976,6 +2048,25 @@ footer p:last-of-type{
         margin-top: 210px;
         padding-bottom: 60px;
     }
+
+    .brand-change .img-gif {
+        width: 230px;
+        position: relative;
+        margin-top: 90px;
+    }
+    
+    .brand-change .img-gif .yellow-square{
+        background-color: #FFDD00;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        right: 2px;
+        top: -75px;
+    }
+
+    .wrap{
+        width: 55%;
+    }
 }
 @media only screen and (max-width: 600px) {
     .lines .line:first-of-type{
@@ -2065,14 +2156,14 @@ footer p:last-of-type{
         -moz-transform: translateY(-7px);
         -ms-transform: translateY(-7px);
         -o-transform: translateY(-7px);
-}
+    }
     .menu-btn span::after{
         transform: translateY(7px);
         -webkit-transform: translateY(7px);
         -moz-transform: translateY(7px);
         -ms-transform: translateY(7px);
         -o-transform: translateY(7px);
-}
+    }
     .menu-btn_active span{
         height: 0;
     }
@@ -2488,6 +2579,9 @@ footer p:last-of-type{
     .contacts .block-description{
         margin-bottom: 250px;
     }
+    .wrap{
+        margin-top: 25px;
+    }
 }
 @media only screen and (max-width: 575px) {
     .column {
@@ -2555,6 +2649,24 @@ footer p:last-of-type{
     }
     .contacts .block-description {
         margin-bottom: 160px;
+    }
+    .brand-change .img-gif {
+        width: 270px;
+        position: relative;
+        margin-top: 90px;
+    }
+    
+    .brand-change .img-gif .yellow-square{
+        background-color: #FFDD00;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        right: 2px;
+        top: -85px;
+    }
+
+    .wrap{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 320px) {
